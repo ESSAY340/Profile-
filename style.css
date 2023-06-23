@@ -10,18 +10,19 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: black;
+  background: url(https://cdn.photoroom.com/v1/assets-cached.jpg?path=backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_c100e1e4-63a9-4adc-9794-202888321104.jpg);
+  background-size: cover;
 }
 .wrapper,
 .wrapper .img-area,
 .social-icons a,
 .buttons button {
-  background: #ecf0f3;
-  background: black;
-  border: 2px solid blue;
+  background: transparent;
+    backdrop-filter: blur(5px);
+  border: 1px solid white;
 }
 .wrapper.wrapper .img-area{
-  border: 2px solid blue;
+  border: 1px solid white;
 }
 .wrapper {
   position: relative;
@@ -36,7 +37,7 @@ body {
 }
 .wrapper .icon {
   font-size: 17px;
-  color: #31344b;
+  color: #fff;
   position: absolute;
   cursor: pointer;
   opacity: 0.7;
@@ -80,11 +81,11 @@ body {
 .wrapper .name {
   font-size: 23px;
   font-weight: 500;
-  color: #31344b;
+  color: #fff;
   margin: 10px 0 5px 0;
 }
 .wrapper .about {
-  color: #44476a;
+  color: #fff;
   font-weight: 400;
   font-size: 16px;
 }
@@ -99,7 +100,7 @@ body {
   display: inline-flex;
   text-decoration: none;
   border-radius: 50%;
-  border: 2px solid blue;
+  border: 1px solid white;
 }
 .social-icons a:hover::before,
 .wrapper .icon:hover::before,
@@ -111,7 +112,7 @@ body {
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  background: black;
+    backdrop-filter: blur(5px);
   box-shadow: inset -3px -3px 7px black, inset 3px 3px 5px black;
 }
 .buttons button:hover:before {
@@ -127,16 +128,16 @@ body {
   line-height: 40px;
 }
 .social-icons a.fb i {
-  color: #4267b2;
+  color: #fff;
 }
 .social-icons a.twitter i {
-  color: #1da1f2;
+  color: #fff;
 }
 .social-icons a.insta i {
-  color: #e1306c;
+  color: #fff;
 }
 .social-icons a.yt i {
-  color: #ff0000;
+  color: #fff;
 }
 .wrapper .buttons {
   display: flex;
@@ -149,13 +150,13 @@ body {
   border: none;
   outline: none;
   padding: 12px 0;
-  color: #31344b;
+  color: #fff;
   font-size: 17px;
   font-weight: 400;
   border-radius: 5px;
   cursor: pointer;
   z-index: 4;
-  border: 2px solid blue;
+  border: 1px solid white;
 }
 .buttons button:first-child {
   margin-right: 10px;
@@ -171,7 +172,7 @@ body {
   justify-content: space-between;
 }
 .social-share .row {
-  color: #31344b;
+  color: #fff;
   font-size: 17px;
   cursor: pointer;
   position: relative;
@@ -181,17 +182,17 @@ body {
   content: "";
   height: 100%;
   width: 2px;
-  background: #e0e6eb;
+  background: transparent;
   margin-left: -25px;
 }
 .row:first-child::before {
-  background: none;
+  background: transparent;
 }
 .social-share .row i.icon-2 {
   position: absolute;
   left: 0;
   top: 50%;
-  color: #31344b;
+  color: #fff;
   transform: translateY(-50%);
   opacity: 0;
   pointer-events: none;
